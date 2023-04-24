@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "t5-experiments"
+version = "0.1.0"
+description = ""
+authors = ["Juan Manuel Pérez <jmperez.85@gmail.com>"]
+readme = "README.md"
+packages = [{include = "t5_experiments"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+transformers = "^4.28.1"
+datasets = "^2.11.0"
+evaluate = {extras = ["sklearn"], version = "^0.4.0"}
+torch = "^2.0.0"
+nltk = "^3.8.1"
+rouge-score = "^0.1.2"
+bitsandbytes = "^0.38.1"
+accelerate = "^0.18.0"
+tensorboard = "^2.12.2"
+sklearn = "^0.0.post4"
+scikit-learn = "^1.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.18.0"
+ipywidgets = ">=7.0, <8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
