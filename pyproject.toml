@@ -19,6 +19,10 @@ accelerate = "^0.18.0"
 tensorboard = "^2.12.2"
 sklearn = "^0.0.post4"
 scikit-learn = "^1.2.2"
+peft = "^0.2.0"
+tokenizers = {extras = ["sentencepiece"], version = "^0.13.3"}
+sentencepiece = "^0.1.98"
+protobuf = "<3.21.0"
 
 
 [tool.poetry.group.dev.dependencies]
